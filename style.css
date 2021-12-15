@@ -5,12 +5,18 @@
     min-width: 100%;
     min-height: 100%;
 }
-  
-header  {
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+header {
     position: absolute;
-    top: 0;
-    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    top: 0;   
+    background: gray;
     color: #f1f1f1;
-    width: 100%;
+    width: 60%;
     padding: 20px;
 }
