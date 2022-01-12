@@ -5,12 +5,12 @@
     width: 100%;
 }
 
-body{
+.body1{
     display: flex;
     justify-content: center;
 }
 
-header {
+.header1 {
     position: absolute;
     text-align: center;
     top: 0;   
@@ -41,24 +41,96 @@ header {
     display: flex;
     flex-direction: column; 
     position: relative;
-    margin-top: 60%;
+    margin-top: 120vh;
     margin-left: 0;
-    justify-content: space-around;
+    justify-content: space-between;
 }
+
 
 .house{
     display: flex;
     flex-direction: row;
     font-size: larger;
+    justify-content:space-between;
+    overflow: hidden;
+    flex-basis: 65vh;   
+    height: 4vh;
+    border: 1px solid black;
+}
+
+.första:hover{
+    animation: bildspel 10s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.andra:hover{
+    animation: bildspel2 10s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+.tredje:hover{
+    animation: bildspel 10s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
 }
 
 .bild{
-    width: 700px;
-    margin-right: 20px;
+    width: 45vw;
+    margin: 4vh;
+    margin-bottom: 10vh;
 }
 
-a{
-    color:black;
-    position:absolute;
-    border: black 2px solid;
+
+.bildspel{
+    position:relative;
+}
+
+.mainpicture{
+    width: 100%;
+}
+
+
+
+
+.header2{
+    color: white;
+    display: flex;
+    padding: 40px;
+    background-color: #16174f;
+    flex-direction: row;
+    margin-top: -10px;
+    justify-content: space-around;
+    font-size: 30px; 
+}
+
+.fakta{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+span{
+    opacity: 75%;
+}
+@keyframes bildspel2 {
+    0%{margin-top: 0vh;}
+    10%{margin-top: -67vh;}
+    35%{margin-top: -67vh;}
+    50%{margin-top: -132vh;}
+    75%{margin-top: -132vh}
+    85%{margin-top: 0vh;}
+}
+
+@keyframes bildspel {
+    0%{margin-top: 0vh;}
+    10%{margin-top: -67vh;}
+    35%{margin-top: -67vh;}
+    50%{margin-top: -145vh;}
+    75%{margin-top: -145vh}
+    85%{margin-top: 0vh;}
 }
