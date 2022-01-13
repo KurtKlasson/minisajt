@@ -166,12 +166,24 @@ footer a{
 @media screen and (max-width: 600px){
 
     #header1{
-        width: 100%;
+        width: 97%;
         left: 0vh;
     }
 
     .topnav{
         display: none;
+    }
+
+    .första:hover{
+        animation: none;
+    }
+    
+    .andra:hover{
+        animation: none;
+    }
+    
+    .tredje:hover{
+        animation: none;
     }
 
     #myVideo{
