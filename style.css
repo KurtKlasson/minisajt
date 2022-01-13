@@ -128,6 +128,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 footer div{
@@ -146,19 +147,19 @@ footer a{
 
 @keyframes bildspel2 {
     0%{margin-top: 0vh;}
-    10%{margin-top: -67vh;}
-    35%{margin-top: -67vh;}
-    50%{margin-top: -132vh;}
-    75%{margin-top: -132vh}
+    10%{margin-top: -65vh;}
+    35%{margin-top: -65vh;}
+    50%{margin-top: -130vh;}
+    75%{margin-top: -130vh}
     85%{margin-top: 0vh;}
 }
 
 @keyframes bildspel {
     0%{margin-top: 0vh;}
-    10%{margin-top: -67vh;}
-    35%{margin-top: -67vh;}
-    50%{margin-top: -145vh;}
-    75%{margin-top: -145vh}
+    10%{margin-top: -65vh;}
+    35%{margin-top: -65vh;}
+    50%{margin-top: -140vh;}
+    75%{margin-top: -140vh}
     85%{margin-top: 0vh;}
 }
 
@@ -166,10 +167,19 @@ footer a{
 
     #header1{
         width: 100%;
+        left: 0vh;
+    }
+
+    .topnav{
+        display: none;
     }
 
     #myVideo{
         display: none;
+    }
+
+    .flex-container{
+        margin-top: 70vh;
     }
 
     .rubrik{
