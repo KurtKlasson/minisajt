@@ -5,19 +5,25 @@
     width: 100%;
 }
 
-.body1{
-    display: flex;
-    justify-content: center;
-}
+
 
 .header1 {
+    left: 40vh;
+    display: flex;
     position: absolute;
     text-align: center;
-    top: 0;   
-    background: gray;
+    top: 0vh;   
+    background: #16174f;
     color: #f1f1f1;
     width: 60%;
-    padding: 20px;
+    padding: 1vh;
+    border-radius: 4%;
+    justify-content: space-between;
+}
+
+.fa-home{
+    color: white;
+    font-size: 7vh;
 }
 
 .topnav input[type=text] {
@@ -30,11 +36,12 @@
 
 .rubrik{
     position: absolute;
-    top: 20%;
+    top: 35%;
     width: 40%;
     font-size: 60px;
-    left: 20%;
+    left: 30%;
     color: aliceblue;
+    text-align: center;
 }
 
 .flex-container{
@@ -42,7 +49,6 @@
     flex-direction: column; 
     position: relative;
     margin-top: 120vh;
-    margin-left: 0;
     justify-content: space-between;
 }
 
@@ -54,7 +60,6 @@
     justify-content:space-between;
     overflow: hidden;
     flex-basis: 65vh;   
-    height: 4vh;
     border: 1px solid black;
 }
 
@@ -102,7 +107,7 @@
     background-color: #16174f;
     flex-direction: row;
     margin-top: -10px;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 30px; 
 }
 
@@ -117,6 +122,28 @@
 span{
     opacity: 75%;
 }
+
+footer{
+    background-color: #16174f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vh;
+    color: white;
+    margin-right: 2vh;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+
 @keyframes bildspel2 {
     0%{margin-top: 0vh;}
     10%{margin-top: -67vh;}
@@ -133,4 +160,37 @@ span{
     50%{margin-top: -145vh;}
     75%{margin-top: -145vh}
     85%{margin-top: 0vh;}
+}
+
+@media screen and (max-width: 600px){
+
+    #header1{
+        width: 100%;
+    }
+
+    #myVideo{
+        display: none;
+    }
+
+    .rubrik{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 15%;
+        background-color: #222;
+        font-size: 50px;
+    }
+
+    .house{
+        overflow: visible;
+        flex-direction: column;
+        
+    }
+    .bild{
+        width: 100%;
+        margin: 0;
+    }
+    .header2{
+        flex-direction: column;
+    }
 }
