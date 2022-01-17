@@ -215,4 +215,12 @@ footer a{
     .header2{
         flex-direction: column;
     }
+    .sista{
+        display: none;
+    }
+}
+
+.enkät{
+    display: flex;
+    flex-direction: column;
 }
